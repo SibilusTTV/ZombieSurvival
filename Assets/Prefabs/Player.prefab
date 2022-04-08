@@ -211,9 +211,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4ab535de80bf4b81821e3d258f11bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  walkingSpeed: 5
+  sprintingSpeed: 8
+  crouchWalkingSpeed: 3
+  crouchSprintingSpeed: 5
   gravity: -9.81
-  jumpHeight: 1.5
+  jumpHeight: 1
 --- !u!114 &5272452727296977814
 MonoBehaviour:
   m_ObjectHideFlags: 0
