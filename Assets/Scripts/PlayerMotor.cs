@@ -76,36 +76,7 @@ public class PlayerMotor : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }
-
-    public void Crouch()
-    {
-        crouching = !crouching;
-        crouchTimer = 0f;
-        lerpCrouch = true;
-        if (crouching)
-        {
-            if (sprinting)
-            {
-                speed = crouchSprintingSpeed;
-            }
-            else
-            {
-                speed = crouchWalkingSpeed;
-            }
-        }
-        else
-        {
-            if (sprinting)
-            {
-                speed = sprintingSpeed;
-            }
-            else
-            {
-                speed = walkingSpeed;
-            }
-        }
-    }
-
+    
     public void StartCrouching()
     {
         crouching = true;
@@ -182,6 +153,36 @@ public class PlayerMotor : MonoBehaviour
             if (crouching)
             {
                 speed = crouchWalkingSpeed;
+            }
+            else
+            {
+                speed = walkingSpeed;
+            }
+        }
+    }
+    */
+    /*
+    public void Crouch()
+    {
+        crouching = !crouching;
+        crouchTimer = 0f;
+        lerpCrouch = true;
+        if (crouching)
+        {
+            if (sprinting)
+            {
+                speed = crouchSprintingSpeed;
+            }
+            else
+            {
+                speed = crouchWalkingSpeed;
+            }
+        }
+        else
+        {
+            if (sprinting)
+            {
+                speed = sprintingSpeed;
             }
             else
             {
